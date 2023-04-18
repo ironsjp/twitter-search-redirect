@@ -25,13 +25,11 @@
       const since = date.getFullYear() + '-' +
         f(date.getMonth() + 1) + '-' +
         f(date.getDate()) + '_' +
-        f(date.getHours()) + ':' +
-        f(date.getMinutes()) + ':' +
-        f(date.getSeconds()) + '_JST'
+        f(date.getHours()) + ':00:00_JST'
 
       const query = `{{ page.query }} since:${since}`
 
-      location.href = `https://twitter.com/search?q=${encodeURI(query)}&src=typed_query&f=top`;
+      location.href = `https://twitter.com/search?q=${encodeURI(query)}&src=typed_query&f=top`
     </script>
 </head>
 <body>
